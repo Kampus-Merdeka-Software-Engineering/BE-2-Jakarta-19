@@ -23,15 +23,3 @@ server.listen(PORT, () => {
     //});
 //});
 
-<<<<<<< HEAD
-
-=======
-// nambah router
-const allRouter = require("./routes")
->>>>>>> d574e35669fa2e53e5c15075978f74b88e775e98
-
-
-
-server.listen(PORT, () =>{
-    console.log("server running on port", PORT);
-})
