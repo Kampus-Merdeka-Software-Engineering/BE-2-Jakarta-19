@@ -16,7 +16,8 @@ module.exports = {
        const pesanTabel = new Tabel(dataTabel)
        pesanTabel.save()
        res.json({
-        status: "success add data"
+        status: "success add data",
+        data: dataTabel
        })
         
 
