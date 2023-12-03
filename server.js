@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 server.use(express.json());
 server.use(allRouter);
 
-app.listen(process.env.PORT, () => {
+server.listen(process.env.PORT, () => {
     console.log(`port berjalan di http://localhost:${process.env.PORT}`);
 });
 
