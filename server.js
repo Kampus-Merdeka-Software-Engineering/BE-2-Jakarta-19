@@ -7,9 +7,11 @@ server.use(cors());
 // nambah router
 const allRouter = require("./routes");
 
-const PORT = process.env.PORT || 3000;
+//const PORT = process.env.PORT || 3000;
+
 
 server.use(express.json());
+server.use(express.urlencoded({ extended: true }));
 server.use(allRouter);
 
 server.listen(process.env.PORT, () => {
