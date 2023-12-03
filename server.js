@@ -12,8 +12,8 @@ const PORT = process.env.PORT || 3000;
 server.use(express.json());
 server.use(allRouter);
 
-server.listen(process.env.PORT, () => {
-  console.log('port berjalan di http://localhost:${process.env.PORT}');
+app.listen(process.env.PORT, () => {
+    console.log(`port berjalan di http://localhost:${process.env.PORT}`);
 });
 
 //server.get("/api",(request, response) => {
