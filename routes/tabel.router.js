@@ -9,8 +9,6 @@ const {
 
 } = require("../controllers/tabel.controllers")
 
-
-
 router.get("/", getTabel)
 router.post("/", addtabel)
 
