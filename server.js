@@ -14,7 +14,7 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(allRouter);
 
-server.listen(PORT, () => {
+server.listen(PORT,"0.0.0.0", () => {
     console.log(`port berjalan di http://localhost:${PORT}`);
 });
 
